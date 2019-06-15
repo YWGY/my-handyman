@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Joi = require('@hapi/joi');
 
-const booking = new mongoose.Schema({
+const schema = new mongoose.Schema({
     customerName :{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Customer', 
@@ -34,6 +34,6 @@ const booking = new mongoose.Schema({
     }
 });
 
-const model = mongoose.model('Booking', schema);
+const model = mongoose.model('Order', schema);
 
 module.exports = model;

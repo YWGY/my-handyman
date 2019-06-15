@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const Joi = require('@hapi/joi');
 
-const category = new mongoose.Schema({
+const schema = new mongoose.Schema({
     name :{
         type:String,
         required:true,        

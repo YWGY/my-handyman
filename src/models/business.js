@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const Joi = require('@hapi/joi');
 
-const business = new mongoose.Schema({
+const schema = new mongoose.Schema({
     businessName :{
         type:String,
         required:true
@@ -39,7 +38,7 @@ const business = new mongoose.Schema({
     }],
     bookings:[{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Booking',
+        ref: 'Order',
     }]
 });
 
