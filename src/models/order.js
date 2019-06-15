@@ -12,11 +12,11 @@ const schema = new mongoose.Schema({
         ref: 'Business',
         required:true 
     },
-    categroies:[{
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'Categroy',
-        required:true 
-    }],
+    // categroies:[{
+    //     type: mongoose.Schema.Types.ObjectId, 
+    //     ref: 'Categroy',
+    //     required:true 
+    // }],
     status:{
         type:String,
         required:true,

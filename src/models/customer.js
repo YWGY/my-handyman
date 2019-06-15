@@ -17,7 +17,7 @@ const schema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    bookings:[{
+    orders:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Order',
     }]
