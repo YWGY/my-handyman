@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const Joi = require('@hapi/joi');
 
 const schema = new mongoose.Schema({
     customerName :{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Customer', 
-        required:true       
+        required:true     //required表示必要字段  
     },
     businessName:{
         type: mongoose.Schema.Types.ObjectId, 
@@ -34,6 +33,5 @@ const schema = new mongoose.Schema({
     }
 });
 
-const model = mongoose.model('Order', schema);
+module.exports = mongoose.model('Order', schema);
 
-module.exports = model;
