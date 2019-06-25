@@ -36,12 +36,10 @@ const schema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'Categroy'
     }],
-    bookings:[{
+    orders:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Order',
     }]
 });
 
-const model = mongoose.model('Business', schema);
-
-module.exports = model;
+module.exports = mongoose.model('Business', schema);
