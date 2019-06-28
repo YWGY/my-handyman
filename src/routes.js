@@ -4,7 +4,7 @@ const businessRoute = require('./routes/business');
 const categoryRoute = require('./routes/category');
 const customerRoute = require('./routes/customer');
 const userRoute = require('./routes/user');
-// const authGuard = require('./middleware/authGuard');
+const authGuard = require('./middleware/authGuard');
 
 const router = express.Router();
 

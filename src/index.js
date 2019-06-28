@@ -22,7 +22,6 @@ app.use(express.json());
 app.use(errorhandler);
 app.use('/api', routes);
 
-
 connectToDB()
   .then(() => {
     console.log('DB connected');

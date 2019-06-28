@@ -4,13 +4,11 @@ const {
   addCategory,
   updateCategory,
   deleteCategory,
-  getCategory
-} = require('../controllers/category');
-
-const {
+  getCategory,
   addBusiness,
   deleteBusiness
-}=require('../controllers/business')
+} = require('../controllers/category');
+
 const router = express.Router();
 
 router.get('/', getAllCategories);

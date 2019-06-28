@@ -27,7 +27,7 @@ const schema = new mongoose.Schema({
         enum:[0, 1, 2, 3, 4, 5],
         default:5
     },
-    Comment:{
+    comment:{
         type:String,              
         default:''
     }

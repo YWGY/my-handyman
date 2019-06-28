@@ -5,17 +5,10 @@ const {
   updateBusiness,
   deleteBusiness,
   getBusiness,
-} = require('../controllers/business');
-
-const {
   addCategory,
   deleteCategory
-} = require('../controllers/category');
+} = require('../controllers/business');
 
-// const {
-//     addOrder,
-//     deleteOrder
-// } = require('../controllers/order');
 
 const router = express.Router();
 
@@ -24,9 +17,6 @@ router.get('/:businessid', getBusiness);
 router.post('/', addBusiness);
 router.put('/:businessid', updateBusiness);
 router.delete('/:businessid', deleteBusiness);
-
-// router.put('/:orderid', addOrder);
-// router.delete('/:orderid', deleteOrder);
 
 router.put('/:categoryid', addCategory);
 router.delete('/:categoryid', deleteCategory);
