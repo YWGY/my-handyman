@@ -3,33 +3,33 @@ const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
     businessName :{
         type:String,
-        required:true
+        required:'Please enter your business name'
     },
     ABN: {
         type:Number,  
-        required:true,
+        required:'Please enter your ABN',
         default:''      
     },
     email:{
         type:String,
-        required:true
+        required:'Please enter your email'
     },
     phone:{
         type:Number,
-        required:true
+        required:'Please enter your phone'
     },
     streeAddress:{
         type:String,
-        required:true,
+        required:'Please enter your street address',
         default:''
     },
     postcode:{
         type:Number,
-        required:true
+        required:'Please enter your postcode'
     },
     state:{
         type:String,
-        required:true,
+        required:'Please enter your state',
         enum: ['NSW', 'VIC', 'QLD', 'WA', 'TAS','SA','ACT', 'NT'], 
     },
     categroies:[{
